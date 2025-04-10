@@ -1,0 +1,22 @@
+{% extends "HTML/Products/topoffer.html" %}
+
+{% block cardimage %}
+https://th.bing.com/th/id/OIP.We1gJRdTO03Mg1noftiNbgHaDO?w=1436&h=626&rs=1&pid=ImgDetMain
+{% endblock %}
+
+{% block cardtitle %}Fashion!!{% endblock %}
+
+{% block href %}/Products/fashion{% endblock %}
+
+{% block category-IF-start %}
+{% if prod.category == "fashion" %}
+{% include "HTML/Products/productcarasouel.html" %}
+{% block productcarasouel %}{% endblock %}
+{% endif %}
+{% endblock %}
+
+{% block target %}fashion{% endblock %}
+
+{% block target-prev %}fashion{% endblock %}
+
+{% block target-next %}fashion{% endblock %}

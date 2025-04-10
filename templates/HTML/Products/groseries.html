@@ -1,0 +1,22 @@
+{% extends "HTML/Products/topoffer.html" %}
+
+{% block cardimage %}
+https://th.bing.com/th/id/OIP.xDSBpX5o8lczbPnBkQ9idQHaHa?w=171&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7
+{% endblock %}
+
+{% block cardtitle %}Blink It!!{% endblock %}
+
+{% block href %}/Products/groseries{% endblock %}
+
+{% block category-IF-start %}
+{% if prod.category == "groseries" %}
+{% include "HTML/Products/productcarasouel.html" %}
+{% block productcarasouel %}{% endblock %}
+{% endif %}
+{% endblock %}
+
+{% block target %}groseries{% endblock %}
+
+{% block target-prev %}groseries{% endblock %}
+
+{% block target-next %}groseries{% endblock %}
